@@ -4,10 +4,10 @@ public class Table {
 
 // ====== VARIABLES ======
 
-    List<Card> _Center = new ArrayList<>();      // kolekcja Center (karty położone będą tutaj składowane aż do Shuffle'a)
+    List<Card> _Center = new ArrayList<>();
     List<Card> _Player1 = new ArrayList<>();
     List<Card> _Player2 = new ArrayList<>();
-    List<Card> _Deck = new ArrayList<>();        // kolekcja _Deck (Tutaj składowane będą potasowane karty gotowe do zebrania przez graczy)
+    List<Card> _Deck = new ArrayList<>();
 
 // ====== MEMBER FUNCTIONS ======
 
@@ -58,6 +58,7 @@ public class Table {
             // table._Player1.size() != 0     ->     break
             // table._Player2.size() != 0     ->     break
         }
+
         if (table._Player1.size() == 0)
             System.out.println("Player 1 wins!");
         else if (table._Player2.size() == 0)
